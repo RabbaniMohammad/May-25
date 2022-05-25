@@ -16,45 +16,80 @@
       crossorigin="anonymous"
     ></script>
     <style>
-      body {
-        display: flex;
-        justify-content: center;
+      img {
+        display: none;
       }
-      .card {
-        border: 5px solid yellow;
-        border-radius: 20px;
-        overflow: hidden;
+      @media (max-width: 400px) {
+        img {
+          display: inline;
+        }
       }
-      .btn-container {
-        text-align: center;
+      @media (min-width: 576px) {
+        p {
+          background-color: red;
+        }
       }
-      .btn-primary{
-          background-color: black;
-          color:yellow;
+      @media (min-width: 768px) {
+        p {
+          background-color: mediumorchid;
+        }
       }
-      .btn-primary:hover{
-          color:white;
+      @media (min-width: 992px) {
+        p {
+          background-color: gray;
+        }
+      }
+      @media (min-width: 1400px) {
+        p {
+          background-color: green;
+        }
       }
     </style>
     <title>Document</title>
   </head>
   <body>
-    <div class="card" style="width: 18rem">
-      <img
-        src="https://pic.warmoven.in/catalog/product/cache/4e14bcb566d25893ae7201d4dbdc22fd/image/14883cb6/pikachu-photo-cake-2.png"
-        class="card-img-top"
-        alt="Image Not Found"
-      />
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </p>
-        <div class="btn-container">
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        <div>
+    <div class="container" style="text-align: justify">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Exercitationem quam harum dolorem adipisci excepturi enim doloribus
+            saepe tenetur quo, esse nihil consequuntur nam, sunt, voluptas neque
+            dignissimos quaerat consectetur explicabo dolorum cupiditate! Soluta
+            numquam obcaecati dolor molestiae, sed alias odit!
+          </p>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Exercitationem quam harum dolorem adipisci excepturi enim doloribus
+            saepe tenetur quo, esse nihil consequuntur nam, sunt, voluptas neque
+            dignissimos quaerat consectetur explicabo dolorum cupiditate! Soluta
+            numquam obcaecati dolor molestiae, sed alias odit! Lorem ipsum dolor
+            sit, amet consectetur adipisicing elit. Exercitationem quam harum
+            dolorem adipisci excepturi enim doloribus saepe tenetur quo, esse
+            nihil consequuntur nam, sunt, voluptas neque dignissimos quaerat
+            consectetur explicabo dolorum cupiditate! Soluta numquam obcaecati
+            dolor molestiae, sed alias odit!
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Exercitationem quam harum dolorem adipisci excepturi enim doloribus
+            saepe tenetur quo, esse nihil consequuntur nam, sunt, voluptas neque
+            dignissimos quaerat consectetur explicabo dolorum cupiditate! Soluta
+            numquam obcaecati dolor molestiae, sed alias odit!
+          </p>
+        </div>
       </div>
+    </div>
+    <div>
+      <img
+        width="100px"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/479px-WhatsApp.svg.png"
+        alt="image not found"
+      />
     </div>
   </body>
 </html>
